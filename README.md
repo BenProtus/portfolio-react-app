@@ -8,3 +8,7 @@ implemented, and published this website using the following technologies:
 * HTML
 * CSS
 * AWS
+    * S3
+    * IAM
+    * Certificate Manager
+    * CloudFront

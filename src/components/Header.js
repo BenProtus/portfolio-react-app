@@ -12,18 +12,19 @@ export default class Header extends Component {
   }
 
   render() {
-    const resume = this.props.resume;
-    const headerStyle = { height: this.state.screenHeight }
+    const header = this.props.header;
+    const links = this.props.socialLinks;
+    const headerStyle = { height: this.state.screenHeight };
     return (
       <header id="home" style={headerStyle}>
         <div id="introduction">
           <div id="intro-text">
-            <h1>I'm {resume.name}.</h1>
-            <h3>I am a {resume.currentRole}. {resume.roleDescription}</h3>
+            <h1>I'm {header.name}.</h1>
+            <h3>I am a {header.currentRole}. {header.roleDescription}</h3>
           </div>
 
           <ul className="social">
-            {resume.socialLinks.map(link => {
+            {links.map(link => {
               return <SocialIcon link={link} key={link.name} />;
             })}
           </ul>

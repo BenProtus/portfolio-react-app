@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Header resume={resume} />
-      <About resume={resume} />
+      <Header header={resume.header} socialLinks={resume.socialLinks} />
+      <About about={resume.about} socialLinks={resume.socialLinks} />
       <Portfolio portfolio={resume.portfolio} />
       <Testimonials testimonials={resume.testimonials} />
-      <Contact resume={resume} />
-      <Footer resume={resume} />
+      <Contact contact={resume.contact} socialLinks={resume.socialLinks} />
+      <Footer socialLinks={resume.socialLinks} />
     </div>
   );
 }

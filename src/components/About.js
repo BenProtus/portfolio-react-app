@@ -3,25 +3,24 @@ import SocialLink from "./subcomponents/SocialLink";
 
 export default class About extends Component {
   render() {
-    const resume = this.props.resume;
+    const about = this.props.about;
+    const links = this.props.socialLinks;
     return (
       <section id="about">
         <div className="row grid">
           <div id="about-me-summary" className="grid-cell">
             <h2>ABOUT ME</h2>
-            <p className="about-summary">{resume.summary}</p>
+            <p className="about-summary">{about.summary}</p>
           </div>
 
           <div id="about-profile-picture" className="grid-cell">
-            <img className="profile" src="images/profile.jpg" alt="Profile" />
+            <img className="profile" src="images/profile.jpg" alt="Ben Protus Profile" />
           </div>
 
           <div id="about-contact-details" className="grid-cell">
             <h4>Contact Details</h4>
             <div className="contact-details">
-              <p>Email:</p>
-              <a href="mailto:ben@benprotus.com">{resume.email}</a>
-              {resume.socialLinks.map((link, index) =>
+              {links.map((link, index) =>
                 <SocialLink key={index} link={link} />
               )}
             </div>

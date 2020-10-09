@@ -3,7 +3,8 @@ import SocialLink from "./subcomponents/SocialLink";
 
 export default class Contact extends Component {
   render() {
-    const resume = this.props.resume;
+    const concludingStatements = this.props.contact.concludingStatements;
+    const socialLinks = this.props.socialLinks;
     return(
       <section id="contact">
         <div className="row">
@@ -12,19 +13,17 @@ export default class Contact extends Component {
               <span>Get in touch.</span>
             </h2>
             <div className="contact-text">
-              <p>Want to work with me? Awesome!</p>
-              <p>You can reach me via email or LinkedIn and I will respond ASAP.</p>
-              <p>You can also check out some of my other work on GitHub.</p>
-              <p>Cheers!</p>
+              {concludingStatements.map((statement, index) =>
+                <p key={index}>{statement}</p>
+              )}
             </div>
           </div>
+
           <div className="five columns">
             <h4>Where to reach me:</h4>
             <div className="contact-details">
-              <p>Email: </p>
-              <a href="mailto:ben@benprotus.com">{resume.email}</a>
-              {resume.socialLinks.map(link =>
-                <SocialLink key={link.name} link={link} />
+              {socialLinks.map((link, index) =>
+                <SocialLink key={index} link={link} />
               )}
             </div>
           </div>

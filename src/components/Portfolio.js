@@ -7,14 +7,15 @@ export default class Portfolio extends Component {
         <h2>
           <span>PORTFOLIO</span>
         </h2>
-        {portfolio && portfolio.map(project => {
+
+        {portfolio.map(project => {
           return (
             <div className="row" key={project.title}>
               <div className="seven columns">
                 {project.url.length > 0
                   ? <a href={project.url}>
                       <h4 className="hyperlink">
-                        <span>{project.title} <i className="fa fa-link"/></span>
+                        <span>{project.title} <i className="fa fa-link" /></span>
                       </h4>
                     </a>
                   : <h4>{project.title}</h4>
@@ -24,8 +25,8 @@ export default class Portfolio extends Component {
 
               <div className="three offset-by-one columns">
                 {project.url.length > 0
-                  ? <a href={project.url}><img src={project.img} alt={project.title + " pic"}/></a>
-                  : <img src={project.img} alt={project.title + " pic"}/>
+                  ? <a href={project.url}><img src={project.img} alt={"Ben Protus " + project.title} /></a>
+                  : <img src={project.img} alt={"Ben Protus " + project.title} />
                 }
               </div>
             </div>

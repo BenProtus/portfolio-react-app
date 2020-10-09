@@ -6,7 +6,7 @@ export default class SocialLink extends Component {
     return(
       <React.Fragment>
         <p>{link.name}: </p>
-        <a key={link.name} href={link.url}>{link.url}</a>
+        <a href={link.prefix + link.url}>{link.url}</a>
       </React.Fragment>
     );
   }
