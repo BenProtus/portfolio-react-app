@@ -4,7 +4,7 @@ import SocialIcon from "./subcomponents/SocialIcon";
 
 export default class Footer extends Component {
   render() {
-    let links = this.props.resume.socialLinks;
+    let links = this.props.socialLinks;
     return(
       <footer>
         <div className="row">
@@ -15,6 +15,7 @@ export default class Footer extends Component {
               })}
             </ul>
           </div>
+
           <div id="scroll-top">
             <Link to="home" smooth={true} title="Scroll to top">
               <i className="fa fa-angle-up" />

@@ -5,7 +5,7 @@ export default class SocialIcon extends Component {
     const link = this.props.link;
     return (
       <li>
-        <a href={link.url}>
+        <a href={link.prefix + link.url}>
           <i className={link.icon}/>
         </a>
       </li>
