@@ -9,7 +9,7 @@ const resume = {
     "socialLinks": [
         {
             "name": "Email",
-            "url": "ben@benprotus.com",
+            "url": "contact@benprotus.com",
             "icon": "fa fa-envelope",
             "prefix": "mailto:"
         },
@@ -47,6 +47,15 @@ const resume = {
 
     "portfolio": [
         {
+            "title": "HP Sustainability Bond Framework",
+            "summary": "Led a small team of engineers in the development a sustainability framework that provides " +
+                "reporting and analytics about offsetting emissions to reach carbon neutrality. Worked directly with " +
+                "HP directors to architect and program solutions that meet their needs using .NET (C#), JavaScript, " +
+                "and Microsoft SQL Server.",
+            "url": "https://press.hp.com/us/en/blogs/2021/hp-sustainable-bond-framework-and-pricing.html",
+            "img": "/images/logos/hp.jpg"
+        },
+        {
             "title": "TechEmpower Intranet",
             "summary": "Created new tools on the company-wide internal network for company members to increase " +
                 "productivity, implemented using the Java framework Gemini and SQL Server for backend development and" +
@@ -62,28 +71,27 @@ const resume = {
             "url": "https://tincosheetmetal.com",
             "img": "/images/logos/tinco.jpg"
         },
-        {
+        /*{
             "title": "Nebula VR",
             "summary": "A Virtual Reality programming language designed for the 3D space. Nebula VR " +
                 "is asynchronous, object-oriented, dynamically-typed, and spatially-scoped. Created dynamic 3D menus " +
                 "and nodes in Unity that interface with the underlying language mechanics to produce functions in VR.",
             "url": "https://nebulavr.github.io/",
             "img": "/images/logos/nebulavr.jpg"
-        },
+        },*/
         {
             "title": "Microsoft HoloLens Art Gallery",
-            "summary": "The Augmented-Reality application allows the user to position, change, and rearrange artwork " +
-                "around any room to meet. Interfaced with Microsoft's Augmented-Reality device the HoloLens to " +
-                "independently develop a Unity art gallery application using C# and the Vuforia library. ",
+            "summary": "Programmed an Augmented-Reality (AR) art gallery application for the Microsoft HoloLens that " +
+                "allows the user to position, change, and rearrange artwork around any room. Independently developed " +
+                "the Unity program using C# and the Vuforia library.",
             "url": "https://github.com/BenProtus/HoloLensArtGallery",
             "img": "/images/logos/hololens.jpg"
         },
         {
             "title": "Pycante",
-            "summary": "The world's HOTTEST programming language! I designed this programming language as a learning " +
-                "tool for others to start learning the fundamentals of programming while also bringing the heat. " +
-                "Modeled off of Python, the language compiles to JavaScript and uses fun language and icons to " +
-                "engage new users.",
+            "summary": "The world's HOTTEST programming language! Designed this programming language as a learning " +
+                "tool for others to start learning the fundamentals of programming. Modeled off of Python, the " +
+                "language compiles to JavaScript and uses fun language and icons to engage new users.",
             "url": "https://github.com/BenProtus/Pycante",
             "img": "/images/logos/pycante.jpg"
         }

@@ -25,7 +25,7 @@ export default class Portfolio extends Component {
 
               <div className="three offset-by-one columns">
                 {project.url.length > 0
-                  ? <a href={project.url}><img src={project.img} alt={"Ben Protus " + project.title} /></a>
+                  ? <a href={project.url} target="_blank" rel="noopener noreferrer"><img src={project.img} alt={"Ben Protus " + project.title} /></a>
                   : <img src={project.img} alt={"Ben Protus " + project.title} />
                 }
               </div>

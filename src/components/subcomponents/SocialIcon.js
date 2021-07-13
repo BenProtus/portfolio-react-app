@@ -5,7 +5,7 @@ export default class SocialIcon extends Component {
     const link = this.props.link;
     return (
       <li>
-        <a href={link.prefix + link.url}>
+        <a href={link.prefix + link.url} target="_blank" rel="noopener noreferrer">
           <i className={link.icon}/>
         </a>
       </li>

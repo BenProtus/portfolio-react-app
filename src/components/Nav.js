@@ -75,11 +75,12 @@ export default class Header extends Component {
   render() {
     const navClass = this.state.isMobileNavOpen ? "mobile" : "";
     const navStyle = this.state.isMobileNavOpen ? {} : this.state.navStyle;
+    const exitNav = this.state.isMobileNavOpen ? {} : { display: "none" };
 
     return (
       <nav id="nav-wrap">
-        <div className="mobile" onClick={this.toggleMobileNav} title="Toggle navigation menu">Toggle navigation</div>
-
+        <div className="mobile" onClick={this.toggleMobileNav} title="Toggle navigation menu" />
+        <div id="nav-exit" className="mobile" style={exitNav} onClick={this.hideMobileNav}>Exit mobile navigation</div>
         <ul id="nav" className={navClass} style={navStyle}>
           <li>
             <Link to="home"

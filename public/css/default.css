@@ -166,21 +166,35 @@ small { font-size: 11px; line-height: inherit; }
 
 /* ----- Blockquotes ----- */
 blockquote {
-    margin: 30px 0;
+    margin: 10px 0;
     padding: 0 0 0 40px;
     position: relative;
 }
 blockquote p {
     font-family: "libre_baskervilleitalic", serif;
     padding: 0;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
 }
 blockquote cite {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
-    line-height: 24px;
+    line-height: 21px;
+}
+@media (min-width: 767px) {
+    blockquote {
+        margin: 30px 0;
+        padding: 0 0 0 40px;
+    }
+    blockquote p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    blockquote cite {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 /*  b. Lists  ------------------------------------- */
