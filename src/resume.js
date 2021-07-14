@@ -30,7 +30,7 @@ const resume = {
     "about": {
         "summary": "I'm a recent graduate with over a year of professional full-stack software development " +
             "experience. I'm an outgoing, detail-oriented developer who thrives in a collaborative environment " +
-            "and I communicate my ideas and questions effectively to produce high-quality end results.",
+            "and I communicate my ideas and questions effectively to produce high-quality results.",
 
         "university": {
             "name": "Loyola Marymount University",
@@ -130,8 +130,8 @@ const resume = {
     "contact": {
         "concludingStatements": [
             "Want to work with me? Awesome!",
-            "You can reach me via email or LinkedIn and I will respond ASAP",
-            "You can also check out some of my other work on GitHub",
+            "You can reach me via email or LinkedIn.",
+            "You can also check out my projects on GitHub",
             "Cheers!"
         ]
     }

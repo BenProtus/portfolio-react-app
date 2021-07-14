@@ -65,8 +65,11 @@
 #nav-wrap > div:after { top: 60%; }
 
 #nav-exit {
-    position: absolute !important;
-    right: 0 !important;
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
     z-index: 1 !important;
     width: 100% !important;
     height: 100% !important;
@@ -223,7 +226,7 @@ header:before {
 
 #intro-text h3 {
     font: 14px/1.9em 'libre_baskervilleregular', sans-serif;
-    color: #B3B7BC;
+    color: #D4D8DC;
     width: 85%;
     margin: 0 auto;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -332,6 +335,7 @@ header #scroll-down a:hover { background-color: #11ABB0; }
 #about .contact-details {
     display: grid;
     grid-template-columns: 72px 80%;
+    margin-bottom: 30px;
 }
 #about .contact-details p {
     margin: 0 5% 10px;
